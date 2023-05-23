@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="capstone_0209_2">
+  <link
+    name="base_footprint">
+    <inertial>
+      <origin
+        xyz="0.000718233250103992 -0.660806871959596 0.111456433078517"
+        rpy="0 0 0" />
+      <mass
+        value="0.712394955694314" />
+      <inertia
+        ixx="0.0242830224260077"
+        ixy="-0.000403337009108569"
+        ixz="0.000656127595395574"
+        iyy="0.0132582035461794"
+        iyz="-5.47726459298211E-05"
+        izz="0.0327259426048953" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://capstone_0209_2/meshes/base_footprint.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://capstone_0209_2/meshes/base_footprint.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.0238791749827691 -0.0185065102764362 -0.079020219576958"
+        rpy="0 0 0" />
+      <mass
+        value="22.7007948034872" />
+      <inertia
+        ixx="0.223162335287752"
+        ixy="-5.36786263693623E-05"
+        ixz="0.000551927631217771"
+        iyy="0.374073653310552"
+        iyz="-0.0205701836042696"
+        izz="0.234182466065195" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://capstone_0209_2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://capstone_0209_2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_link_joint"
+    type="fixed">
+    <origin
+      xyz="0.12294 -0.6668 0.23"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="base_footprint" />
+    <child
+      link="base_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="wheel_left_link">
+    <inertial>
+      <origin
+        xyz="3.28695976853366E-07 2.56523307373691E-07 0.0294825758438816"
+        rpy="0 0 0" />
+      <mass
+        value="1.58056110292652" />
+      <inertia
+        ixx="0.00544632978806305"
+        ixy="6.97161824094405E-08"
+        ixz="6.70426747100936E-10"
+        iyy="0.00544616005317429"
+        iyz="-1.23471526254134E-09"
+        izz="0.0101058657276587" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://capstone_0209_2/meshes/wheel_left_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://capstone_0209_2/meshes/wheel_left_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_left_joint"
+    type="fixed">
+    <origin
+      xyz="-0.067057 -0.9952 0.0874"
+      rpy="-1.5708 -1.4506 0" />
+    <parent
+      link="base_footprint" />
+    <child
+      link="wheel_left_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="wheel_right_link">
+    <inertial>
+      <origin
+        xyz="3.28488709733232E-07 0.000517424126481536 2.56367615941722E-07"
+        rpy="0 0 0" />
+      <mass
+        value="1.58056110539573" />
+      <inertia
+        ixx="0.00544632979855629"
+        ixy="-6.77238438756456E-10"
+        ixz="6.97068227175995E-08"
+        iyy="0.0101058657439191"
+        iyz="1.2298248008867E-09"
+        izz="0.0054461600607077" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://capstone_0209_2/meshes/wheel_right_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.376470588235294 0.376470588235294 0.376470588235294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://capstone_0209_2/meshes/wheel_right_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_right_joint"
+    type="fixed">
+    <origin
+      xyz="-0.067057 -0.3684 0.0874"
+      rpy="0 0.07987 0" />
+    <parent
+      link="base_footprint" />
+    <child
+      link="wheel_right_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="base_scan">
+    <inertial>
+      <origin
+        xyz="-5.66266580590558E-05 -0.0200187113210334 0.0363485719403987"
+        rpy="0 0 0" />
+      <mass
+        value="0.161197400528312" />
+      <inertia
+        ixx="7.24069589563969E-05"
+        ixy="-9.79737097618776E-08"
+        ixz="-2.39087138325529E-07"
+        iyy="0.000101877702773367"
+        iyz="6.02987510963334E-07"
+        izz="7.3565738215239E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://capstone_0209_2/meshes/base_scan.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://capstone_0209_2/meshes/base_scan.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_scan_joint"
+    type="fixed">
+    <origin
+      xyz="0.0252725318755981 -0.666799999999999 0.615"
+      rpy="-1.5707963267949 0 -1.5707963267949" />
+    <parent
+      link="base_footprint" />
+    <child
+      link="base_scan" />
+    <axis
+      xyz="-1 0 0" />
+  </joint>
+</robot>

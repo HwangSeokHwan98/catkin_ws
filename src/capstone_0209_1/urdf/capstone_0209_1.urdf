@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="capstone_0209_1">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.373320425061352 -0.0211116234772542 1.15862198744433"
+        rpy="0 0 0" />
+      <mass
+        value="22.8998371180205" />
+      <inertia
+        ixx="0.234339637872532"
+        ixy="0.0205701978873844"
+        ixz="0.000551381601274083"
+        iyy="0.374220939621622"
+        iyz="5.36556162277599E-05"
+        izz="0.223359546236833" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://capstone_0209_1/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.250980392156863 0.250980392156863 0.250980392156863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://capstone_0209_1/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
